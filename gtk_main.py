@@ -17,6 +17,7 @@ class MainWindow(Gtk.Window):
 
 		self.entry = Gtk.Entry()
 		self.entry.get_text()
+		self.entry.connect("activate", self.on_click)
 		vbox.pack_start(self.entry, False, True, 6)
 
 		self.label2 = Gtk.Label()
@@ -25,6 +26,7 @@ class MainWindow(Gtk.Window):
 
 		self.entry2 = Gtk.Entry()
 		self.entry2.get_text()
+		self.entry2.connect("activate", self.on_click)
 		vbox.pack_start(self.entry2, False, True, 6)
 
 		self.label3 = Gtk.Label()
@@ -33,6 +35,7 @@ class MainWindow(Gtk.Window):
 
 		self.entry3 = Gtk.Entry()
 		self.entry3.get_text()
+		self.entry3.connect("activate", self.on_click)
 		vbox.pack_start(self.entry3, False, True, 6)
 
 		button = Gtk.Button.new_with_label("Calculate!")
