@@ -30,7 +30,7 @@ class MainWindow(Gtk.Window):
 		vbox.pack_start(self.entry2, False, True, 6)
 
 		self.label3 = Gtk.Label()
-		self.label3.set_text("What is your average speed?")
+		self.label3.set_text("What is your average speed (knots)?")
 		vbox.pack_start(self.label3, True, True, 0)
 
 		self.entry3 = Gtk.Entry()
