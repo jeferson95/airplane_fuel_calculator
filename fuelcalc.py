@@ -1,3 +1,5 @@
+# This is where the calculation is done.
+
 def fuel_calc(fuelc, distance, speed):
 	while True:
 		try:
