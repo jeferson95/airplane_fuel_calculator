@@ -50,7 +50,7 @@ class MainWindow(Gtk.Window):
 		result = fuelcalc.fuel_calc(first_entry, second_entry, third_entry)
 		print(result)
 
-		dialog = Gtk.MessageDialog(self, 0, Gtk.MessageType.INFO, Gtk.ButtonsType.OK, "This is the result")
+		dialog = Gtk.MessageDialog(parent=self, flags=0, message_type=Gtk.MessageType.INFO, buttons=Gtk.ButtonsType.OK, text="This is the result")
 		dialog.format_secondary_text(result)
 		dialog.run()
 		print("INFO dialog closed")
